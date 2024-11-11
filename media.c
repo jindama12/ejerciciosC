@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 void main(int argc, char *argv[]) {
-    printf("Dígame el número\n");
     int num;
 
     FILE *entrada;
