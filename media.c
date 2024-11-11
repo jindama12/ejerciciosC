@@ -5,7 +5,7 @@ void main(int argc, char *argv[]) {
     printf("Dígame el número\n");
     int num;
 
-    FILE entrada;
+    FILE *entrada;
     entrada = fopen(argv[1], "r");
 
     if (entrada == NULL) {
@@ -21,11 +21,11 @@ void main(int argc, char *argv[]) {
             loops++;
             media += num;
         } else {
-            break;  º
+            break;
         }
     }
 
-    if (cont > 0) {
+    if (loops > 0) {
         media /= loops;
     }
 
