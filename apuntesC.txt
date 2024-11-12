@@ -18,7 +18,7 @@ fprintf(archivo, contenido) -> escribe en el fichero
 fclose(archivo) -> cierra el fichero
 pipe(variable) -> variable[0] -> lectura
                -> variable[1] -> escritura
-procesoHijo = wait(NULL) -> esperar a que el proceso hijo acabe
+wait(NULL) -> esperar a que el proceso hijo acabe
 srand(getpid()) -> numeros aleatorios bien hecho
 variable = rand() * opciones -> número aleatorio
 FILE *variable = fopen(argv[1], "r") -> puede ser "r", "w", "rw"
