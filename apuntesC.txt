@@ -5,14 +5,15 @@ stdio.h -> FILE, printf, scanf, etc...
 unistd.h -> fork, pipe, IO, execl
 sys/wait.h -> wait or sleep
 ctype.h -> tolower, toupper, isblank, isspace, isdigit, ...
+signal.h -> señales
 
 MÉTODOS/ESTRUCTURAS EN C
 execl(direccionArchivo, comando, (char*)NULL) -> ejecuta este comando y acaba con el programa -> NULL manda a la basura los errores -> para ls -l ir a /bin/ls
 system(comando) -> crea un hijo que ejecuta el comando y el programa sigue
 typedef struct -> definir objeto
 write(archivo, contenido, longuitud)
-read(archivo, variable, longuitud)
-fopen(archivo, modo)
+read(archivo, variableGuardar, longuitud)
+fopen(archivo, modo) -> -> puede ser "r", "w", "rw"
 fscanf(archivo, tipoVariable, variableGuardar) -> si es > 0 ha leído algo
 fprintf(archivo, contenido) -> escribe en el fichero
 fclose(archivo) -> cierra el fichero
@@ -25,9 +26,12 @@ FILE *variable = fopen(argv[1], "r") -> puede ser "r", "w", "rw"
 void manejador(int segnal) -> controlar códigos kill de procesos
 signal(señal, manejador) -> asigna una señal al manejador
 kill(pidProceso, señal) -> manda una señal al proceso
-tipoVarible *nombreVariable[cantidad] -> array de punteros de tipoVariable
+tipoVarible *nombreVariable[cantidad] -> mejor forma para orden un array de algo
 strcpy -> pasar valor de un string en declaración de objeto
 stderr -> salida de error usada con fprintf
 
 MÉTODOS/ESTRUCTURAS EN JAVA
-BufferedReader br = new BufferedReader(new InputStreamReader(proceso.getOutputStream())) -> para poder leer la salida del programa línea a línea
+FileReader fr = new FileReader(fichero);
+BufferedReader br = new BufferedReader(fr); -> lectura de ficheros en Java
+InputStream is = new InputStream(proceso.getOuputStream) -> o la salida que se desee
+BufferedReader br = new BufferedReader(new InputStreamReader(is)) -> para poder leer la salida del programa línea a línea
