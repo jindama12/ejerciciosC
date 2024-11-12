@@ -6,7 +6,7 @@ unistd.h -> fork, pipe, IO, execl
 sys/wait.h -> wait or sleep
 ctype.h -> tolower, toupper, isblank, isspace, isdigit, ...
 
-MÉTODOS/ESTRUCTURAS
+MÉTODOS/ESTRUCTURAS EN C
 execl(direccionArchivo, comando, (char*)NULL) -> ejecuta este comando y acaba con el programa -> NULL manda a la basura los errores
 system(comando) -> crea un hijo que ejecuta el comando y el programa sigue
 typedef struct -> definir objeto
@@ -21,10 +21,13 @@ pipe(variable) -> variable[0] -> lectura
 procesoHijo = wait(NULL) -> esperar a que el proceso hijo acabe
 srand(getpid()) -> numeros aleatorios bien hecho
 variable = rand() * opciones -> número aleatorio
-FILE *variable = NULL
+FILE *variable = fopen(argv[1], "r") -> puede ser "r", "w", "rw"
 void manejador(int segnal) -> controlar códigos kill de procesos
 signal(señal, manejador) -> asigna una señal al manejador
 kill(pidProceso, señal) -> manda una señal al proceso
 tipoVarible *nombreVariable[cantidad] -> array de punteros de tipoVariable
 strcpy -> pasar valor de un string en declaración de objeto
 stderr -> salida de error usada con fprintf
+
+MÉTODOS/ESTRUCTURAS EN JAVA
+BufferedReader br = new BufferedReader(new InputStreamReader(p.getOutputStream())) -> para poder leer la salida del programa línea a línea
