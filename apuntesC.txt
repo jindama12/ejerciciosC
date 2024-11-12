@@ -11,6 +11,7 @@ MÉTODOS/ESTRUCTURAS EN C
 execl(direccionArchivo, comando, (char*)NULL) -> ejecuta este comando y acaba con el programa -> NULL manda a la basura los errores -> para ls -l ir a /bin/ls
 system(comando) -> crea un hijo que ejecuta el comando y el programa sigue
 typedef struct -> definir objeto
+malloc(sizeof(tipoVariable)) -> asigna un tamaño de memoria a una variable
 write(archivo, contenido, longuitud)
 read(archivo, variableGuardar, longuitud)
 fopen(archivo, modo) -> -> puede ser "r", "w", "rw"
