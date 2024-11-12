@@ -30,4 +30,4 @@ strcpy -> pasar valor de un string en declaración de objeto
 stderr -> salida de error usada con fprintf
 
 MÉTODOS/ESTRUCTURAS EN JAVA
-BufferedReader br = new BufferedReader(new InputStreamReader(p.getOutputStream())) -> para poder leer la salida del programa línea a línea
+BufferedReader br = new BufferedReader(new InputStreamReader(proceso.getOutputStream())) -> para poder leer la salida del programa línea a línea
