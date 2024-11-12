@@ -7,7 +7,7 @@ sys/wait.h -> wait or sleep
 ctype.h -> tolower, toupper, isblank, isspace, isdigit, ...
 
 MÉTODOS/ESTRUCTURAS EN C
-execl(direccionArchivo, comando, (char*)NULL) -> ejecuta este comando y acaba con el programa -> NULL manda a la basura los errores
+execl(direccionArchivo, comando, (char*)NULL) -> ejecuta este comando y acaba con el programa -> NULL manda a la basura los errores -> para ls -l ir a /bin/ls
 system(comando) -> crea un hijo que ejecuta el comando y el programa sigue
 typedef struct -> definir objeto
 write(archivo, contenido, longuitud)
