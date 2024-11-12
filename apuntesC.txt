@@ -1,12 +1,14 @@
 LIBRERIAS
-string.h -> manipular arrays de caracteres, strlen
-stdlib.h -> sizeof, etc...
-stdio.h -> printf, scanf, etc...
+string.h -> strcpy, strlen
+stdlib.h -> malloc, srand, rand, exit, ...
+stdio.h -> FILE, printf, scanf, etc...
 unistd.h -> fork, pipe, IO, execl
-sys/wait.h -> wait
-ctype.h -> tolower, toupper, isblank, isspace, isdigit
+sys/wait.h -> wait or sleep
+ctype.h -> tolower, toupper, isblank, isspace, isdigit, ...
 
 MÉTODOS/ESTRUCTURAS
+execl(direccionArchivo, comando, (char*)NULL) -> ejecuta este comando y acaba con el programa -> NULL manda a la basura los errores
+system(comando) -> crea un hijo que ejecuta el comando y el programa sigue
 typedef struct -> definir objeto
 write(archivo, contenido, longuitud)
 read(archivo, variable, longuitud)
