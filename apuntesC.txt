@@ -12,8 +12,8 @@ execl(direccionArchivo, comando, (char*)NULL) -> ejecuta este comando y acaba co
 system(comando) -> crea un hijo que ejecuta el comando y el programa sigue
 typedef struct -> definir objeto
 malloc(sizeof(tipoVariable)) -> asigna un tamaño de memoria a una variable
-write(archivo, contenido, longuitud)
-read(archivo, variableGuardar, longuitud)
+write(fd[1], contenido, longuitud)
+read(fd[0], variableGuardar, longuitud) -> si es > 0 ha leído algo
 fopen(archivo, modo) -> -> puede ser "r", "w", "rw"
 fscanf(archivo, tipoVariable, variableGuardar) -> si es > 0 ha leído algo
 fprintf(archivo, contenido) -> escribe en el fichero
